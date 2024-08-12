@@ -28,3 +28,12 @@ console.log("hello"*3)
 console.log(21-"hello")
 console.log(0*Infinity)
 console.log("hello"/3)
+
+//strings
+console.log("------------------------------")
+console.log("Hello, World!")
+console.log('Single quotes')
+console.log(`Template literal`)
+console.log("hello".toUpperCase())
+console.log("Hello" + " " + "World")
+
