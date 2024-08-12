@@ -44,3 +44,17 @@ console.log(5 < 3)
 console.log(true && false)
 console.log(true || false)
 console.log("hello"==0)
+
+// Empty Values
+console.log("------------------------------")
+let value = null;
+console.log(value)
+
+console.log(null)
+
+data=[1,2,3,4]
+data=null
+console.log(data)
+
+let obj = { key: null }
+console.log(obj.key)
