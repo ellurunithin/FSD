@@ -7,6 +7,7 @@ console.log(10/3)
 
 // special numbers
     // infinity
+    
 console.log(1000/0)
 console.log(1e1000)
 console.log(Infinity * 2)
