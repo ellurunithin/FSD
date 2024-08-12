@@ -37,3 +37,10 @@ console.log(`Template literal`)
 console.log("hello".toUpperCase())
 console.log("Hello" + " " + "World")
 
+// boolean
+console.log("------------------------------")
+console.log(5 > 3)
+console.log(5 < 3)
+console.log(true && false)
+console.log(true || false)
+console.log("hello"==0)
