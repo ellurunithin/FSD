@@ -57,3 +57,44 @@ console.log(data)
 
 let obj = { key: undefined }
 console.log(obj.key)
+
+// Arthematic operators
+console.log("----------------------------")
+console.log(5 + 3)
+console.log(5 - 3)
+console.log(5 * 3)
+console.log(5 / 3)
+console.log(5 % 3)
+
+// uniary operator
+console.log("----------------------------")
+console.log(+('5'))
+console.log(-('5'))
+
+let a = 10
+console.log(++a)
+let b = 5
+console.log(--b)
+console.log(!true)
+
+// logical operators
+console.log("----------------------------")
+console.log(1 && 2)
+console.log(0 || 3)
+console.log(!true)
+console.log(!33)
+console.log(true && true)
+
+// tunary operators
+console.log("----------------------------")
+let age = 18
+console.log(age >= 18 ? 'Adult' : 'Minor')
+let score = 85;
+console.log(score >= 90 ? 'A' : score >= 80 ? 'B' :'D')
+let s = true ? 'Welcome back!' : 'Please log in';
+console.log(s)
+console.log(5 > 3 ? 'Yes' : 'No')
+let number = 10
+console.log(number % 2 === 0 ? 'Even' : 'Odd')
+
+
