@@ -57,3 +57,18 @@ console.log(data)
 
 let obj = { key: undefined }
 console.log(obj.key)
+
+// automatic type conversion
+console.log("-----------------------")
+let num = 5;
+let str = 'The number is ' + num;
+console.log(str)
+let result = 10 + '20';
+console.log(result)
+
+let result1 = 10 - '20';
+console.log(result1)
+
+console.log(5=='5')
+let boolean1=true
+console.log(boolean1+1)
