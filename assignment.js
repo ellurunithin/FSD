@@ -52,9 +52,8 @@ console.log(value)
 
 console.log(null)
 
-data=[1,2,3,4]
-data=null
+let data
 console.log(data)
 
-let obj = { key: null }
+let obj = { key: undefined }
 console.log(obj.key)
