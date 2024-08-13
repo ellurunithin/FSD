@@ -32,3 +32,22 @@ console.log(false+undefined)
 
 // == compares values after type conversion if necessary (e.g., 2 == '2' is true).
 // === compares both value and type without conversion (e.g., 2 === '2' is false because one is a number and the other is a string).
+
+
+// Q4. [1 Point] Predict the output of the following expressions and explain your reasoning:
+
+console.log(0==false)
+// output: true
+// 0 and false are considered equal in value, so the result is true.
+
+console.log(0===false)
+// output: false
+// 0 is a number and false is a boolean, so the result is false.
+
+console.log(''==0)
+// output: true
+// Both '' (empty string) and 0 are treated as falsy values, so the result is true.
+
+console.log(''===0)
+// output: false
+// '' is a string and 0 is a number, so the result is false.
