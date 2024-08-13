@@ -26,3 +26,9 @@ console.log(true+2)
 console.log(false+undefined)
 // output: Not a Number
 // false is 0, but undefined can't be used in math, so the result is NaN (Not a Number).
+
+
+// Q3. [1 Point] What is the difference between == and === in JavaScript? Provide examples.
+
+// == compares values after type conversion if necessary (e.g., 2 == '2' is true).
+// === compares both value and type without conversion (e.g., 2 === '2' is false because one is a number and the other is a string).
