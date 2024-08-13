@@ -51,3 +51,17 @@ console.log(''==0)
 console.log(''===0)
 // output: false
 // '' is a string and 0 is a number, so the result is false.
+
+
+// Q5. [1 Point] Given the following code, what will be the output and why?
+console.log(0 || 1 && 2 || 3)
+// output: 2
+// 1 && 2 is 2, and 0 || 2 || 3 evaluates to 2 (first truthy value).
+
+console.log(false || (true && false) || true)
+// output: true
+// (true && false) is false, and false || false || true gives true.
+
+console.log(0 && 1 || 2 && 3)
+// output: 3
+// 0 && 1 is 0, then 2 && 3 is 3, so the result is 3.
