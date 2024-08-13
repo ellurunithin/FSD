@@ -65,3 +65,23 @@ console.log(false || (true && false) || true)
 console.log(0 && 1 || 2 && 3)
 // output: 3
 // 0 && 1 is 0, then 2 && 3 is 3, so the result is 3.
+
+
+// Q6. [1 Point] Predict the output of the following expressions and explain your reasoning:
+
+let a = 10, b = 20, c = 30
+console.log(a + b * c)
+// output: 610
+// b * c is 600, then a + 600 gives 610.
+
+console.log((a + b) * c)
+// output: 900
+// a + b is 30, then 30 * c gives 900.
+
+console.log(a + b > c ? a : b)
+// output: 20
+// a + b is 30, which is equal to c, so it picks b, which is 20.
+
+console.log((a > b) && (b > c) || (a > c))
+// output: false
+// None of these conditions are true, so the result is false.
