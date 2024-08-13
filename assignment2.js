@@ -85,3 +85,19 @@ console.log(a + b > c ? a : b)
 console.log((a > b) && (b > c) || (a > c))
 // output: false
 // None of these conditions are true, so the result is false.
+
+
+// Q7. [2 Points] Analyze and explain the output of the following code snippets:
+console.log([] + {})
+// output: "[object Object]" 
+// The array is converted to an empty string, and the object is converted to "[object Object]", then they're concatenated.
+console.log({} + [])
+// output: "[object Object]" 
+// Similar to the first case, treated as string concatenation.
+console.log([] == ![])
+// output: true 
+//  [] becomes an empty string "", and ![] is false, which also converts to "", so they are equal.
+console.log('' == [])
+// output: true 
+// Both '' and [] are converted to empty strings, making them equal.
+
