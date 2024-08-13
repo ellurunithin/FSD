@@ -101,3 +101,24 @@ console.log('' == [])
 // output: true 
 // Both '' and [] are converted to empty strings, making them equal.
 
+
+
+// Q8. [2 Points] What will be the output of the following code, and why?
+console.log(+"")
+// output: 0
+// The + operator attempts to convert the empty string "" to a number, which results in 0.
+
+console.log(+true)
+// output: 1
+// true is converted to the number 1 when using the + operator.
+console.log(+false)
+// output: 0
+// false is converted to the number 0 when using the + operator.
+
+console.log(+null)
+// output: 0
+// null is converted to 0 when using the + operator.
+
+console.log(+undefined)
+// output: NaN
+// undefined cannot be converted to a number, so it results in NaN (Not a Number).
