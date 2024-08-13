@@ -8,3 +8,21 @@
 // null is used when you want to show that a variable has no value on purpose.
 // ex: let obj = { name: "John", age: null };
 // console.log(obj.age);
+
+// Q2. [1 Point] What will be the output of the following code snippet, and why?
+
+console.log('10'+5)
+// output:  105
+// The string '10' and the number 5 are combined, resulting in '105' (string concatenation).
+
+console.log('10'-5)
+// output: 5
+// The string '10' is converted to the number 10, then 10 - 5 gives 5.
+
+console.log(true+2)
+// output: 3
+// true is treated as 1, so 1 + 2 gives 3.
+
+console.log(false+undefined)
+// output: Not a Number
+// false is 0, but undefined can't be used in math, so the result is NaN (Not a Number).
