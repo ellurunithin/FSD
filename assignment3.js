@@ -32,3 +32,36 @@ console.log(typeof user);
 console.log(0b1101);
 console.log(0o17);
 console.log(2000n + 4n);
+
+
+//3. Data Types in JavaScript - Part 2
+// Strings are sequences of characters enclosed in single quotes, double quotes, or backticks.
+console.log("Hello, world!");
+let a = "nithin";
+let b = "elluru";
+console.log(a + b);
+console.log("nithin \n elluru");
+console.log("nithin\t\telluru\vnani\vni\bne\bed");
+console.log('nithin"elluru"');
+
+// Boolean represents logical values: true or false.
+console.log(5 > 3);
+console.log(15 < (3 ^ 3));
+console.log("Cd" < "cd");
+console.log(undefined, typeof undefined);
+
+// Undefined means a variable has been declared but not assigned a value.
+let c;
+console.log(c);
+let d;
+console.log(d);
+
+// Null indicates that a variable has no value.
+let shoppingCart = ["Apple", "", "Banana", null, "Orange"];
+console.log( shoppingCart[3]);
+
+
+// NaN stands for "Not-a-Number".
+console.log(0 / 0);
+console.log(1 / "hello");
+console.log(parseInt("hello"));
