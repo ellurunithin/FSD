@@ -14,3 +14,21 @@
 
 
 
+
+//2. Data Types in JavaScript - Part 1
+// Data types are essential for storing and manipulating data in progelluruming.
+// there are two main categories: Primitive and Object types.
+// Primitive data types include Numbers, Strings, Boolean, Null, Undefined, and Symbol.
+// Numbers represent both integer and floating-point values, and you can use different base number systems.
+console.log(4503599627370495 + 4503599627370495);
+console.log(Number.MAX_VALUE * 2);
+console.log(Number.MAX_SAFE_INTEGER - 1);
+console.log(1.797631486324357e+322);
+console.log(999999999999999999999999999999);
+console.log(999999999999999999999999999999n);
+let user = 14;
+console.log(user);
+console.log(typeof user);
+console.log(0b1101);
+console.log(0o17);
+console.log(2000n + 4n);
