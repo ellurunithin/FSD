@@ -20,6 +20,7 @@
 // there are two main categories: Primitive and Object types.
 // Primitive data types include Numbers, Strings, Boolean, Null, Undefined, and Symbol.
 // Numbers represent both integer and floating-point values, and you can use different base number systems.
+console.log("-----------------------------------------------------")
 console.log(4503599627370495 + 4503599627370495);
 console.log(Number.MAX_VALUE * 2);
 console.log(Number.MAX_SAFE_INTEGER - 1);
@@ -36,26 +37,30 @@ console.log(2000n + 4n);
 
 //3. Data Types in JavaScript - Part 2
 // Strings are sequences of characters enclosed in single quotes, double quotes, or backticks.
+console.log("-----------------------------------------------------")
 console.log("Hello, world!");
 let a = "nithin";
 let b = "elluru";
 console.log(a + b);
 console.log("nithin \n elluru");
-console.log("nithin\t\telluru\vnani\vni\bne\bed");
+console.log("nithin\t\telluru\vnani\vn\bne\bed");
 console.log('nithin"elluru"');
 
+console.log("-----------------------------------------------------")
 // Boolean represents logical values: true or false.
 console.log(5 > 3);
 console.log(15 < (3 ^ 3));
 console.log("Cd" < "cd");
 console.log(undefined, typeof undefined);
 
+console.log("-----------------------------------------------------")
 // Undefined means a variable has been declared but not assigned a value.
 let c;
 console.log(c);
 let d;
 console.log(d);
 
+console.log("-----------------------------------------------------")
 // Null indicates that a variable has no value.
 let shoppingCart = ["Apple", "", "Banana", null, "Orange"];
 console.log( shoppingCart[3]);
@@ -71,6 +76,7 @@ console.log(parseInt("hello"));
 //4. Type Conversion and Coercion
 // Type Conversion is the process of converting one data type to another, 
 // also known as type casting.
+console.log("-----------------------------------------------------")
 let r = "1234";
 console.log(Number(r), typeof Number(r)); // Converts the string "1234" to a number
 
@@ -84,6 +90,7 @@ console.log(String(s), typeof String(s)); // Converts the boolean value true to 
 // Coercion
 // Coercion is an implicit conversion where JavaScript automatically converts operands to 
 // the same data type to perform an operation.
+console.log("-----------------------------------------------------")
 let kk = 15 - "7";
 console.log(kk, typeof kk); // Subtracting a string from a number results in a number
 kk = +kk + 5;
@@ -103,6 +110,7 @@ console.log(Boolean(undefined)); // Converting undefined to a boolean value, whi
 //5. Arithmetic Operators
 // These are mathematical symbols used to calculate values, such as addition(+), 
 // subtraction(-), multiplication(*), and division(/).
+console.log("-----------------------------------------------------")
 let x = 22;
 let y = 60;
 console.log(x + y);
@@ -118,6 +126,7 @@ console.log(y % x);
 
 //6. Relational Operators
 // These operators are used to compare two values.
+console.log("-----------------------------------------------------")
 let e = "Hello";
 let f = "hello";
 console.log(e < f);
@@ -129,6 +138,7 @@ console.log("2" < 2);
 //7. Logical Operators
 // These are used to combine multiple boolean expressions or values and return a boolean result.
 // The main types are AND (&&), OR (||), and NOT (!).
+console.log("-----------------------------------------------------")
 // AND
 console.log(true && true);
 console.log(true && false);
@@ -147,6 +157,7 @@ console.log(7 > 5 || 3 > 4 && 2 < 6 || 10 < 8 || !0);
 //8. Ternary Operators
 // This is a shorthand way of performing conditional evaluations. 
 // the ternary operator ('? :') allows you to execute one of two expressions based on a condition.
+console.log("-----------------------------------------------------")
 console.log(45 % 2 === 0 ? "even" : "odd"); // Checks if 45 is even or odd
 console.log("Python" == "Python" ? "match" : "mismatch"); // Compares two identical strings
 console.log("abc" < "xyz" ? "true" : "false"); // Compares strings ascii values
