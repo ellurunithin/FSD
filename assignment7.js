@@ -47,3 +47,49 @@ function sum(numbers) {
 console.log(range(1,10))
 console.log(sum(range(5, 2, -1)));
 console.log(sum(range(1, 10)));
+
+
+// Q2. REVERSING AN ARRAY
+// Arrays have a reverse method that changes the array by inverting the order in which its elements appear. For
+// this exercise, write two functions, reverseArray and reverseArrayInPlace. The first, reverseArray, should take an
+// array as its argument and produce a new array that has the same elements in the inverse order. The second,
+// reverseArrayInPlace, should do what the reverse method does: modify the array given as its argument by
+// reversing its elements. Neither may use the standard reverse method.
+
+
+// Function to create a new array with elements in reverse order
+function reverseArray(array) {
+    let newArray = [];
+    for (let i = array.length - 1; i >= 0; i--) {
+        newArray.push(array[i]);
+    }
+    return newArray;
+}
+
+// Function to reverse the elements of the array in place
+function reverseArrayInPlace(array) {
+    let left = 0;
+    let right = array.length - 1;
+
+    while (left < right) {
+        // Swap the elements at the left and right indices
+        let temp = array[left];
+        array[left] = array[right];
+        array[right] = temp;
+
+        // Move the pointers towards the center
+        left++;
+        right--;
+    }
+
+    return array; // Returning the modified array is optional since it's modified in place
+}
+
+// Example usage
+console.log(reverseArray([1, 2, 3, 4, 5]));
+// → [5, 4, 3, 2, 1]
+
+let array = [1, 2, 3, 4, 5];
+reverseArrayInPlace(array);
+console.log(array);
+// → [5, 4, 3, 2, 1]
