@@ -20,3 +20,15 @@
 // Example : Adding Numbers Together
 // If you have a list of numbers [1, 2, 3, 4], and you want to add them all together, 
 // .reduce() will give you 10 as the result.
+
+
+// Q3. Explain the .filter() function in JavaScript and 
+// provide three examples with detailed explanations.
+
+// The .filter() function works like a sieve. It takes a list of items and filters out the ones 
+// that don’t meet certain criteria, 
+// leaving you with a new list of just the items you want.
+
+// Example : Finding Even Numbers
+// If you have a list of numbers [1, 2, 3, 4, 5, 6], and you only want the even ones, 
+// .filter() will give you [2, 4, 6].
