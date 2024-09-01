@@ -60,3 +60,22 @@ console.log("Extracted Details:", extractedDetails);
 // Replace IP addresses in the log
 const modifiedLog = replaceIPs(log);
 console.log("Modified Log:\n", modifiedLog);
+
+// Q3. Basic Try-Catch Block
+// Write a simple function that divides two numbers. If the divisor is zero, the function should throw an error with
+// the message "Division by zero is not allowed." Use a try-catch block to handle this error and display an
+// appropriate message to the user.
+
+function divideNumbers(dividend, divisor) {
+    try {
+        if (divisor === 0) throw new Error("Division by zero is not allowed.");
+        return dividend / divisor;
+    } catch (error) {
+        console.error(error.message);
+        return null;
+    }
+}
+
+// Example usage
+const result = divideNumbers(10, 0);
+console.log(result !== null ? `Result: ${result}` : "Operation could not be completed.");
