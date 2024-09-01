@@ -43,6 +43,17 @@ const sum = numbers.reduce(function(accumulator, currentValue) {
 // that don’t meet certain criteria, 
 // leaving you with a new list of just the items you want.
 
+// Original array of numbers
+const number = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+// Using .filter() to select only even numbers
+const evenNumbers = numbers.filter(function(number) {
+  return number % 2 === 0;
+});
+
+// Output the new array
+console.log(evenNumbers); // [2, 4, 6, 8, 10]
+
 // Example : Finding Even Numbers
 // If you have a list of numbers [1, 2, 3, 4, 5, 6], and you only want the even ones, 
 // .filter() will give you [2, 4, 6].
