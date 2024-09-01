@@ -6,6 +6,11 @@
 //  a machine (the .map() function) modifies it. 
 //  The result is a new row of objects that have been changed in some way.
 
+const squaredNumbers = numbers.map(function(number) {
+    return number * number;
+  });
+
+
 // Example: Doubling Numbers
 // Imagine you have a list of numbers [1, 2, 3, 4], and you want to double each number. 
 // Using .map(), you get a new list [2, 4, 6, 8]. The original list stays the same; 
