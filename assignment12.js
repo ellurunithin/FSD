@@ -27,3 +27,36 @@ const validPasswords = validatePasswords(passwordList);
 console.log(validPasswords);
 
 
+
+// Q2. Extract and Modify Data from a Log File:
+// Given a log file containing lines in the following format:
+// 2024-08-28 14:32:01 - Error: User john_doe failed to login from IP 192.168.1.1
+// Write a regex to extract the date, username, and IP address.
+// Then, write a function that replaces all IP addresses with the string ‘[REDACTED]’ and returns the modified log.
+// Function to extract date, username, and IP address
+function extractDetails(log) {
+    // Regular expression pattern to extract date, username, and IP address
+    const extractPattern = /(\d{4}-\d{2}-\d{2}) (\d{2}:\d{2}:\d{2}) - Error: User (\w+) failed to login from IP (\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})/g;
+    // Array to store extracted details
+    const details = [];
+    let match;
+    while ((match = extractPattern.exec(log)) !== null) {
+        const [fullMatch, date, time, username, ip] = match;
+        details.push({ date, time, username, ip });
+    }
+    return details;
+}
+// Function to replace IP addresses with '[REDACTED]'
+function replaceIPs(log) {
+    const modifiedLog = log.replace(/\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}/g, '[REDACTED]');
+    return modifiedLog;
+}
+// Example log
+const log = `2024-08-28 14:32:01 - Error: User john_doe failed to login from IP 192.168.1.1
+2024-08-28 15:00:00 - Error: User jane_smith failed to login from IP 10.0.0.2`;
+// Extract details from the log
+const extractedDetails = extractDetails(log);
+console.log("Extracted Details:", extractedDetails);
+// Replace IP addresses in the log
+const modifiedLog = replaceIPs(log);
+console.log("Modified Log:\n", modifiedLog);
