@@ -22,6 +22,15 @@ const squaredNumbers = numbers.map(function(number) {
 // The .reduce() function is like a snowball rolling down a hill, gathering more snow as it goes. 
 // It starts with an initial value (the snowball), then adds to it with each step until it reaches the bottom of the hill. 
 // This function is great for turning a list of items into a single result.
+
+// Original array of numbers
+const numbers = [1, 2, 3, 4, 5];
+
+// Using .reduce() to sum all numbers in the array
+const sum = numbers.reduce(function(accumulator, currentValue) {
+  return accumulator + currentValue;
+}, 0);
+
 // Example : Adding Numbers Together
 // If you have a list of numbers [1, 2, 3, 4], and you want to add them all together, 
 // .reduce() will give you 10 as the result.
